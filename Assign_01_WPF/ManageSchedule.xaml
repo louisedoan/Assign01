@@ -1,0 +1,39 @@
+﻿<Window x:Class="Assign_01_WPF.ManageSchedule"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Assign_01_WPF"
+        mc:Ignorable="d"
+        Title="Manage Schedule" Height="450" Width="800">
+    <Grid>
+        <GroupBox Header="Candidate Info" Margin="14,50,0,228" HorizontalAlignment="Left" Width="626">
+            <Canvas Margin="0,0,-2,0" Height="146">
+                <Label Content="Interview ID" Canvas.Left="25" Canvas.Top="10" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <TextBox x:Name="txtInterviewId" Canvas.Left="116" TextWrapping="Wrap" Canvas.Top="14" Width="154" HorizontalAlignment="Center" Height="22" VerticalAlignment="Top"/>
+                <Label Content="Candidate ID" Canvas.Left="25" Canvas.Top="55" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <TextBox x:Name="txtCandidateId" Canvas.Left="116" TextWrapping="Wrap" Canvas.Top="57" Width="154" Height="22" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <Label Content="Birthday" Canvas.Left="315" Canvas.Top="13" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <Label Content="Location" Canvas.Left="25" Canvas.Top="100" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <TextBox x:Name="txtLocation" Canvas.Left="111" TextWrapping="Wrap" Canvas.Top="107" Width="154" Height="22" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <TextBox x:Name="txtInterviewer" Canvas.Left="406" TextWrapping="Wrap" Canvas.Top="65" Width="154" Height="22" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <Label Content="Interviewer" Canvas.Left="308" Canvas.Top="63" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <DatePicker x:Name="dtInterviewDate" Canvas.Left="406" Canvas.Top="13" HorizontalAlignment="Left" VerticalAlignment="Center" Width="194"/>
+            </Canvas>
+        </GroupBox>
+        <GroupBox Header="Operator" Margin="658,17,10,185">
+            <Canvas Height="223" VerticalAlignment="Top" Margin="129,0,0,0">
+                <Button x:Name="btnBack" Content="Back" Canvas.Left="-115" Canvas.Top="174" Height="39" Width="92" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <Button x:Name="btnAddSchedule" Content="Add" Canvas.Left="-115" Canvas.Top="10" Height="39" Width="92" HorizontalAlignment="Center" VerticalAlignment="Top" Click="btnAdd_Click"/>
+                <Button x:Name="btnEditSchedule" Content="Edit" Canvas.Left="-115" Canvas.Top="119" Height="39" Width="92" HorizontalAlignment="Center" VerticalAlignment="Top" Click="btnEdit_Click"/>
+                <Button x:Name="btnDeleteSchedule" Content="Delete" Canvas.Left="-115" Canvas.Top="64" Height="39" Width="92" HorizontalAlignment="Center" VerticalAlignment="Top" Click="btnDelete_Click"/>
+            </Canvas>
+        </GroupBox>
+        <Label Content="Filter" HorizontalAlignment="Left" Margin="156,17,0,0" VerticalAlignment="Top" RenderTransformOrigin="4.526,0.995"/>
+        <Button x:Name="btnSearch" Content="Search" HorizontalAlignment="Left" Margin="456,17,0,0" VerticalAlignment="Top" Height="25" Width="65" Click="btnSearch_Click" RenderTransformOrigin="0.438,0.114"/>
+        <TextBox x:Name="txtSearch" HorizontalAlignment="Left" Margin="230,17,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170" Height="25"/>
+        <GroupBox Header="Interview Schedule List" Margin="10,241,10,10">
+            <DataGrid x:Name="dgvSchedule" d:ItemsSource="{d:SampleData ItemCount=5}" SelectionChanged="dgvCandidate_SelectionChanged"/>
+        </GroupBox>
+    </Grid>
+</Window>
