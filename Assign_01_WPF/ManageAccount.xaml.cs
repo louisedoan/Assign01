@@ -144,6 +144,10 @@ namespace Assign_01_WPF
         private void btnBack_Click(object sender, RoutedEventArgs e)
         {
 
+            ChoosePage choosePage = new ChoosePage();
+            choosePage.Show();
+            this.Hide();
+           
         }
 
         private void btnSearch_Click(object sender, RoutedEventArgs e)

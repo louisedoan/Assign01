@@ -137,5 +137,14 @@ namespace Assign_01_WPF
                 dgvSchedule.ItemsSource = searchResults;
 
         }
+
+        private void btnExit_Click(object sender, RoutedEventArgs e)
+        {
+
+            ChoosePage choosePage = new ChoosePage();
+            choosePage.Show();
+            this.Hide();
+            
+        }
     }
 }

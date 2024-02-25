@@ -48,6 +48,9 @@ namespace Assign_01_WPF
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
+            ManageAccount managementWindow = new ManageAccount();
+            managementWindow.Show();
+            this.Hide();
 
         }
     }

@@ -21,7 +21,7 @@
         </GroupBox>
         <GroupBox Header="Operator" Margin="658,17,10,217">
             <Canvas Height="223" VerticalAlignment="Top" Margin="129,0,0,0">
-                <Button x:Name="btnExit" Content="Exit" Canvas.Left="-768" Canvas.Top="-16" Height="39" Width="92" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <Button x:Name="btnExit" Content="Exit" Canvas.Left="-768" Canvas.Top="-16" Height="39" Width="92" HorizontalAlignment="Left" VerticalAlignment="Top" Click="btnExit_Click"/>
                 <Button x:Name="btnAddJob" Content="Add" Canvas.Left="-101" Canvas.Top="8" Height="39" Width="92" HorizontalAlignment="Left" VerticalAlignment="Center" Click="btnAdd_Click"/>
                 <Button x:Name="btnEditJob" Content="Edit" Canvas.Left="-102" Canvas.Top="108" Height="39" Width="92" HorizontalAlignment="Left" VerticalAlignment="Top" Click="btnEdit_Click"/>
                 <Button x:Name="btnDeleteJob" Content="Delete" Canvas.Left="-102" Canvas.Top="64" Height="39" Width="92" HorizontalAlignment="Left" VerticalAlignment="Top" Click="btnDelete_Click"/>
