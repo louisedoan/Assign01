@@ -15,23 +15,23 @@
                 <TextBox x:Name="txtPassword" Canvas.Left="100" TextWrapping="Wrap" Canvas.Top="60" Width="154" Height="22" HorizontalAlignment="Center" VerticalAlignment="Top"/>
                 <Label Content="" Canvas.Left="270" Canvas.Top="56" HorizontalAlignment="Center" VerticalAlignment="Top"/>
                 <Label Content="Full Name" Canvas.Left="332" Canvas.Top="7" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-                <TextBox x:Name="txtFullname" Canvas.Left="423" TextWrapping="Wrap" Canvas.Top="14" Width="154" Height="22" HorizontalAlignment="Left" VerticalAlignment="Top" TextChanged="txtProfileShortDescription_TextChanged"/>
+                <TextBox x:Name="txtFullname" Canvas.Left="434" TextWrapping="Wrap" Canvas.Top="14" Width="154" Height="22" HorizontalAlignment="Left" VerticalAlignment="Center" TextChanged="txtProfileShortDescription_TextChanged" RenderTransformOrigin="0.558,0.525"/>
                 <TextBox x:Name="txtMemberRole" Canvas.Left="434" TextWrapping="Wrap" Canvas.Top="56" Width="154" Height="22" HorizontalAlignment="Left" VerticalAlignment="Top"/>
                 <Label Content="Member Role" Canvas.Left="323" Canvas.Top="56" HorizontalAlignment="Left" VerticalAlignment="Top"/>
             </Canvas>
         </GroupBox>
-        <GroupBox Header="Operator" Margin="658,17,10,185">
+        <GroupBox Header="Operator" Margin="658,17,10,217">
             <Canvas Height="223" VerticalAlignment="Top" Margin="129,0,0,0">
-                <Button x:Name="btnBack" Content="Back" Canvas.Left="-115" Canvas.Top="173" Height="39" Width="92" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <Button x:Name="btnExit" Content="Exit" Canvas.Left="-766" Canvas.Top="-26" Height="39" Width="92" HorizontalAlignment="Left" VerticalAlignment="Top" Click="btnBack_Click"/>
                 <Button x:Name="btnAdd" Content="Add" Canvas.Left="-115" Canvas.Top="8" Height="39" Width="92" HorizontalAlignment="Left" VerticalAlignment="Center" Click="btnAdd_Click"/>
-                <Button x:Name="btnEdit" Content="Edit" Canvas.Left="-115" Canvas.Top="113" Height="39" Width="92" HorizontalAlignment="Left" VerticalAlignment="Top" Click="btnEdit_Click"/>
-                <Button x:Name="btnDelete" Content="Delete" Canvas.Left="-115" Canvas.Top="64" Height="39" Width="92" HorizontalAlignment="Left" VerticalAlignment="Center" Click="btnDelete_Click"/>
+                <Button x:Name="btnEdit" Content="Edit" Canvas.Left="-115" Canvas.Top="121" Height="39" Width="92" HorizontalAlignment="Center" VerticalAlignment="Top" Click="btnEdit_Click"/>
+                <Button x:Name="btnDelete" Content="Delete" Canvas.Left="-115" Canvas.Top="64" Height="39" Width="92" HorizontalAlignment="Center" VerticalAlignment="Top" Click="btnDelete_Click"/>
             </Canvas>
         </GroupBox>
         <Label Content="Filter" HorizontalAlignment="Left" Margin="182,13,0,0" VerticalAlignment="Top" RenderTransformOrigin="4.526,0.995"/>
-        <Button x:Name="btnSearch" Content="Search" HorizontalAlignment="Left" Margin="491,13,0,0" VerticalAlignment="Top" Height="26" Width="65" Click="btnSearch_Click"/>
+        <Button x:Name="btnSearch" Content="Search" HorizontalAlignment="Left" Margin="499,17,0,0" VerticalAlignment="Top" Height="26" Width="79" Click="btnSearch_Click"/>
         <TextBox x:Name="txtSearch" HorizontalAlignment="Left" Margin="263,17,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170" Height="25"/>
-        <GroupBox Header="Account List" Margin="10,241,10,10">
+        <GroupBox Header="Account List" Margin="10,236,10,10">
             <DataGrid x:Name="dgvAccount" d:ItemsSource="{d:SampleData ItemCount=5}" SelectionChanged="dgvCandidate_SelectionChanged"/>
         </GroupBox>
     </Grid>

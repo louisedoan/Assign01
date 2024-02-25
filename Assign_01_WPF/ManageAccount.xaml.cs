@@ -140,7 +140,19 @@ namespace Assign_01_WPF
                     MessageBox.Show("Error: " + ex.Message);
                 }
             }
-        
+
+        private void btnBack_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnSearch_Click(object sender, RoutedEventArgs e)
+        {
+
+            string searchTerm = txtSearch.Text;
+            List<Hraccount> searchResults = accountService.SearchAccount(searchTerm);
+            dgvAccount.ItemsSource = searchResults;
+        }
     }
 
 }

@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="Schedulde List" Height="450" Width="800">
     <Grid x:Name="dgvSchedule">
-        <DataGrid x:Name="dgvScheduleIist" d:ItemsSource="{d:SampleData ItemCount=5}" SelectionChanged="DataGrid_SelectionChanged_1"/>
+        <DataGrid x:Name="dgvScheduleIist" d:ItemsSource="{d:SampleData ItemCount=5}" SelectionChanged="DataGrid_SelectionChanged_1" Margin="0,140,0,10"/>
+        <Label Content="InterviewID" HorizontalAlignment="Left" Margin="85,40,0,0" VerticalAlignment="Top" Width="82"/>
+        <TextBox x:Name="txtSearch" HorizontalAlignment="Left" Margin="236,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="212" Height="18"/>
+        <Button x:Name="btnSearch" Content="Search" HorizontalAlignment="Left" Margin="504,47,0,0" VerticalAlignment="Top" Click="btnSearch_Click"/>
     </Grid>
 </Window>

@@ -9,11 +9,11 @@
     <Grid>
         <TextBox x:Name="txtUsername" HorizontalAlignment="Left" Margin="349,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="txtPassword" HorizontalAlignment="Left" Margin="349,192,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Username" HorizontalAlignment="Left" Margin="233,138,0,0" VerticalAlignment="Top" Height="28" Width="72"/>
+        <Label Content="Email" HorizontalAlignment="Left" Margin="233,138,0,0" VerticalAlignment="Top" Height="28" Width="72"/>
         <Label Content="Password" HorizontalAlignment="Left" Margin="237,185,0,0" VerticalAlignment="Top" Height="29" Width="59"/>
         <Button x:Name="btnLogin" Content="Login" HorizontalAlignment="Left" Margin="251,270,0,0" VerticalAlignment="Top" Click="btnLogin_Click" Width="68" Height="25"/>
         <Button Content="Exit" HorizontalAlignment="Left" Margin="400,270,0,0" VerticalAlignment="Top" Width="69" Height="25"/>
-        <Label Content="Management candidate and interview system" HorizontalAlignment="Left" Margin="221,60,0,0" VerticalAlignment="Top" Width="279" Height="30"/>
+        <Label Content="Management candidate and interview system" HorizontalAlignment="Left" Margin="115,37,0,0" VerticalAlignment="Top" Width="538" Height="71" FontSize="24" FontWeight="Bold"/>
 
     </Grid>
 </Window>

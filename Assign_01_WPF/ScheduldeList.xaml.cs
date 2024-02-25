@@ -1,4 +1,5 @@
-﻿using Service;
+﻿using BussinessObject;
+using Service;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -41,6 +42,12 @@ namespace Assign_01_WPF
 
         }
 
+        private void btnSearch_Click(object sender, RoutedEventArgs e)
+        {
 
+            string searchTerm = txtSearch.Text;
+            List<InterviewSchedule> searchResults = scheduleService.SearchSchedule(searchTerm);
+            dgvScheduleIist.ItemsSource = searchResults;
+        }
     }
 }
