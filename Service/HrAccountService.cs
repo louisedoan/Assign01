@@ -30,7 +30,7 @@ namespace Service
 
         public List<Hraccount> GetAccounts()
         {
-            throw new NotImplementedException();
+            return memRepo.GetAccounts();
         }
 
         public Hraccount GetById(string id)
