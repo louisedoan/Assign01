@@ -7,10 +7,10 @@
         mc:Ignorable="d"
         Title="ChoosePage" Height="450" Width="800">
     <Grid>
-        <Label Content="Admin.&#xA;Please choose." HorizontalAlignment="Left" Margin="266,91,0,0" VerticalAlignment="Top" Width="248" Height="54"/>
-        <Button Content="Manage Interview" HorizontalAlignment="Left" Margin="167,187,0,0" VerticalAlignment="Top" Width="127" Click="Button_Click" Height="30"/>
-        <Button x:Name="btnManageCandidate" Content="Manage Candidate" HorizontalAlignment="Center" Margin="0,187,0,0" VerticalAlignment="Top" Width="148" Click="btnManageCandidate_Click" Height="30"/>
-        <Button x:Name="btnManageJob" Content="Manage Job" HorizontalAlignment="Left" Margin="539,187,0,0" VerticalAlignment="Top" Height="30" Width="131" Click="btnManageJob_Click"/>
-        <Button Content="Manage Account" HorizontalAlignment="Left" Margin="310,342,0,0" VerticalAlignment="Top" Click="Button_Click_1"/>
+        <Label Content="Welcome to Candidate and Interview Management System.&#xA;Please choose what do you want to do" HorizontalAlignment="Left" Margin="266,91,0,0" VerticalAlignment="Top" Width="358" Height="52"/>
+        <Button Content="Manage Interview" HorizontalAlignment="Left" Margin="84,197,0,0" VerticalAlignment="Top" Width="127" Click="Button_Click" Height="30"/>
+        <Button x:Name="btnManageCandidate" Content="Manage Candidate" HorizontalAlignment="Left" Margin="266,197,0,0" VerticalAlignment="Top" Width="134" Click="btnManageCandidate_Click" Height="35"/>
+        <Button x:Name="btnManageJob" Content="Manage Job" HorizontalAlignment="Left" Margin="454,0,0,0" VerticalAlignment="Center" Height="40" Width="136" Click="btnManageJob_Click"/>
+        <Button Content="Manage Account" HorizontalAlignment="Left" Margin="641,0,0,0" VerticalAlignment="Center" Click="Button_Click_1" Height="40" Width="131"/>
     </Grid>
 </Window>

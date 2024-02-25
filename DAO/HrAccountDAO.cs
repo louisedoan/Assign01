@@ -31,7 +31,7 @@ namespace DAO
         public Hraccount GetManagementMember(String email)
         {
             var dbContext = new CandidateManagement_03Context();
-            //   return dbContent.BookManagementMembers.SingleOrDefault(p => p.Email.Equals(email));
+            
 
             return dbContext.Hraccounts.SingleOrDefault(m => m.Email.Equals(email));
 
@@ -56,12 +56,12 @@ namespace DAO
             }
         }
 
-        public Hraccount GetById(string id)
+        public Hraccount GetById(string email)
         {
             try
             {
                 var dbContext = new CandidateManagement_03Context();
-                return dbContext.Hraccounts.SingleOrDefault(p => p.Email.Equals(id));
+                return dbContext.Hraccounts.SingleOrDefault(p => p.Email.Equals(email));
 
 
 

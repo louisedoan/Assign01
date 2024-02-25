@@ -48,7 +48,7 @@ namespace DAO
             try
             {
                 var dbContext = new CandidateManagement_03Context();
-                
+
                 return dbContext.InterviewSchedules.SingleOrDefault(p => p.InterviewId.Equals(id));
 
 
@@ -143,4 +143,5 @@ namespace DAO
                 throw new Exception(ex.Message);
             }
         }
+    }
 }
