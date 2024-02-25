@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Manage Candidate" Height="450" Width="800">
     <Grid>
-        <GroupBox Header="Jobs" Margin="10,60,0,208" HorizontalAlignment="Left" Width="626">
+        <GroupBox Header="Candidate" Margin="10,60,0,208" HorizontalAlignment="Left" Width="626">
             <Canvas Margin="0,0,-2,0" Height="159" VerticalAlignment="Top">
                 <Label Content="CandidateID" Canvas.Top="19" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Left="10"/>
                 <TextBox x:Name="txtCandidateID" Canvas.Left="147" TextWrapping="Wrap" Canvas.Top="19" Width="154" HorizontalAlignment="Left" Height="22" VerticalAlignment="Center"/>
@@ -34,7 +34,7 @@
         <Label Content="FullName" HorizontalAlignment="Left" Margin="178,29,0,0" VerticalAlignment="Top" RenderTransformOrigin="4.526,0.995"/>
         <Button x:Name="btnSearch" Content="Search" HorizontalAlignment="Left" Margin="499,30,0,0" VerticalAlignment="Top" Height="25" Width="65" Click="btnSearch_Click"/>
         <TextBox x:Name="txtSearch" HorizontalAlignment="Left" Margin="272,30,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170" Height="25"/>
-        <GroupBox Header="Job List" Margin="10,241,10,10">
+        <GroupBox Header="Candidate List" Margin="10,241,10,10">
             <DataGrid x:Name="dgvCandidate" d:ItemsSource="{d:SampleData ItemCount=5}" SelectionChanged="dgvCandidate_SelectionChanged"/>
         </GroupBox>
     </Grid>
